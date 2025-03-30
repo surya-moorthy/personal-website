@@ -26,13 +26,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <BackgroundLines className="flex items-center justify-center flex-col">
+      
       <body
         className={`${poppinsSans.variable} ${geistMono.variable} antialiased `}
-      > 
-        {children}
+      > <>
+        <BackgroundLines>
+            {children}
+        </BackgroundLines>
+        </>
       </body>
-      </BackgroundLines>
+      
     </html>
   );
 }
